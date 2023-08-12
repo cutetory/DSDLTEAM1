@@ -1,6 +1,6 @@
-# FROM tensorflow/tensorflow:latest-gpu
+FROM tensorflow/tensorflow:latest-gpu
 
-# WORKDIR /Back-End
+WORKDIR /Back-End
 
 # COPY requirements.txt requirements.txt
 
