@@ -1,11 +1,11 @@
-FROM tensorflow/tensorflow:latest-gpu
+# FROM tensorflow/tensorflow:latest-gpu
 
-WORKDIR /Back-End
+# WORKDIR /Back-End
 
-COPY requirements.txt requirements.txt
+# COPY requirements.txt requirements.txt
 
-RUN pip install -r requirements.txt
+# RUN pip install -r requirements.txt
 
-EXPOSE 8888
+# EXPOSE 9001
 
-ENTRYPOINT [ "jupyter", "lab", "--ip=0.0.0.0", "--allow-root", "--no-browser" ]
+# ENTRYPOINT [ "jupyter", "lab", "--ip=0.0.0.0", "--allow-root", "--no-browser" ]

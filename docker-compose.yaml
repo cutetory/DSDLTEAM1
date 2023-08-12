@@ -1,7 +1,7 @@
 version: '1.0'
 services:
   jupyter-lab:
-    build: .
+    build: ./tf-test
     ports:
       - 8888:8888
     volumes:
@@ -16,7 +16,7 @@ services:
   backend:
     build: ./Back-End
     ports:
-    - 8888:8888
+    - 9001:9001
     volumes:
     - ./Back-End:/Back-End
     deploy:
@@ -29,13 +29,13 @@ services:
   database:
     build: ./Database
     ports:
-    - 8888:8888
+    - 9002:9002
     volumes:
     - ./Database:/Database
 
   frontend:
     build: ./Front-End
     ports:
-    - 8888:8888
+    - 9003:9003
     volumes:
     - ./Front-End:/Front-End

@@ -6,4 +6,4 @@ RUN npm install -g http-server
 
 WORKDIR /Front-End
 
-CMD /"http-server", "-p", "8080", "/Front-End"
+CMD /"http-server", "-p", "8866", "/Front-End"
