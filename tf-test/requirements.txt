@@ -1,3 +1,11 @@
 jupyterlab
 pandas
 matplotlib
+numpy
+ipython
+tensorflow
+seaborn
+scikit-learn
+pillow
+torch
+torchvision
