@@ -13,3 +13,29 @@ services:
             - driver: nvidia
               count : 1
               capabilities: [gpu]
+  backend:
+    build: ./Back-End
+    ports:
+    - 8888:8888
+    volumes:
+    - ./Back-End:/Back-End
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count : 1
+              capabilities: [gpu]
+  database:
+    build: ./Database
+    ports:
+    - 8888:8888
+    volumes:
+    - ./Database:/Database
+
+  frontend:
+    build: ./Front-End
+    ports:
+    - 8888:8888
+    volumes:
+    - ./Front-End:/Front-End
