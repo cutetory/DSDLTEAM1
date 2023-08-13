@@ -10,4 +10,4 @@ pillow
 torch
 torchvision
 ninja
-pickle
+pickle5

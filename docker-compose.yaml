@@ -19,13 +19,13 @@ services:
     - 9001:9001
     volumes:
     - ./Back-End:/Back-End
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count : 1
-              capabilities: [gpu]
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count : 1
+    #           capabilities: [gpu]
   database:
     build: ./Database
     ports:

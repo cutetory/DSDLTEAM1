@@ -1,4 +1,5 @@
 FROM tensorflow/tensorflow:latest-gpu
+# FROM tensorflow/tensorflow:1.5.0-gpu-py3
 
 WORKDIR /tf-test
 
