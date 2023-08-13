@@ -9,3 +9,5 @@ scikit-learn
 pillow
 torch
 torchvision
+ninja
+pickle
