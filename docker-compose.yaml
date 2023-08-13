@@ -13,12 +13,12 @@ services:
             - driver: nvidia
               count : 1
               capabilities: [gpu]
-  backend:
-    build: ./Back-End
-    ports:
-    - 9001:9001
-    volumes:
-    - ./Back-End:/Back-End
+  # backend:
+  #   build: ./Back-End
+  #   ports:
+  #   - 9001:9001
+  #   volumes:
+  #   - ./Back-End:/Back-End
     # deploy:
     #   resources:
     #     reservations:
@@ -26,16 +26,16 @@ services:
     #         - driver: nvidia
     #           count : 1
     #           capabilities: [gpu]
-  database:
-    build: ./Database
-    ports:
-    - 9002:9002
-    volumes:
-    - ./Database:/Database
+  # database:
+  #   build: ./Database
+  #   ports:
+  #   - 9002:9002
+  #   volumes:
+  #   - ./Database:/Database
 
-  frontend:
-    build: ./Front-End
-    ports:
-    - 9003:9003
-    volumes:
-    - ./Front-End:/Front-End
+  # frontend:
+  #   build: ./Front-End
+  #   ports:
+  #   - 9003:9003
+  #   volumes:
+  #   - ./Front-End:/Front-End
