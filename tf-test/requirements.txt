@@ -3,11 +3,16 @@ pandas
 matplotlib
 numpy
 ipython
-tensorflow
 seaborn
 scikit-learn
 pillow
 torch
 torchvision
 ninja
-pickle5
+pickle5 # 파이썬 3.8.x 이상에서 사용
+# pickle3 # 파이썬 3.0.x ~ 3.7.x
+click
+tqdm
+requests
+pyspng
+imageio-ffmpeg==0.4.3
