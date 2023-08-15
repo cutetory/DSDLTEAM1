@@ -6,13 +6,13 @@ services:
       - 8888:8888
     volumes:
       - ./tf-test:/tf-test
-    # deploy:
-    #   resources:
-    #     reservations:
-    #       devices:
-    #         - driver: nvidia
-    #           count : 1
-    #           capabilities: [gpu]
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count : 1
+              capabilities: [gpu]
   # backend:
   #   build: ./Back-End
   #   ports:
