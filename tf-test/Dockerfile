@@ -11,10 +11,10 @@ RUN pip install -r requirements.txt
 # ENV PATH /usr/local/cuda-11.8/bin:$PATH
 
 # Set environment variables for CUDA
-# ENV PATH="/usr/local/cuda-11.8/bin:$PATH"
-# ENV LD_LIBRARY_PATH="/usr/local/cuda-11.8/lib64:$LD_LIBRARY_PATH"
-ENV PATH="/usr/local/cuda-12.2/bin:$PATH"
-ENV LD_LIBRARY_PATH="/usr/local/cuda-12.2/lib64:$LD_LIBRARY_PATH"
+ENV PATH="/usr/local/cuda-11.8/bin:$PATH"
+ENV LD_LIBRARY_PATH="/usr/local/cuda-11.8/lib64:$LD_LIBRARY_PATH"
+# ENV PATH="/usr/local/cuda-12.2/bin:$PATH"
+# ENV LD_LIBRARY_PATH="/usr/local/cuda-12.2/lib64:$LD_LIBRARY_PATH"
 
 
 EXPOSE 8888
