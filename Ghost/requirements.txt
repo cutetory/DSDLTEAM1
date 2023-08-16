@@ -9,7 +9,7 @@ pillow
 torch
 torchvision
 ninja
-pickle5 # 파이썬 3.8.x 이상에서 사용
+# pickle5 # 파이썬 3.8.x 이상에서 사용 3.11은 오류남 내장??
 # pickle3 # 파이썬 3.0.x ~ 3.7.x
 click
 tqdm
@@ -24,6 +24,7 @@ pydotplus
 keras_cv_attention_models
 glob2
 scikit-image
+opencv-python
 
 # Ghost Face Net
 # 1. Python 3.9.12 64-bit

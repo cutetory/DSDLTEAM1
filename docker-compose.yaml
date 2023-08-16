@@ -1,11 +1,24 @@
-version: '0.0.0'
+version: '0.1.0'
 services:
-  jupyter-lab:
-    build: ./tf-test
+  # jupyter-lab:
+  #   build: ./tf-test
+  #   ports:
+  #     - 8888:8888
+  #   volumes:
+  #     - ./tf-test:/tf-test
+  #   deploy:
+  #     resources:
+  #       reservations:
+  #         devices:
+  #           - driver: nvidia
+  #             count : 1
+  #             capabilities: [gpu]
+  ghost:
+    build: ./Ghost
     ports:
       - 8888:8888
     volumes:
-      - ./tf-test:/tf-test
+      - ./Ghost:/Ghost
     deploy:
       resources:
         reservations:
